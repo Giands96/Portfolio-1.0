@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: #1e1e1e;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAV BAR*/
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.061);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 5px 0;
+}
+
+.logotipo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo div>a {
+    display: flex;
+    align-items: center;
+    color: rgb(236, 236, 236);
+    margin: 0 1rem;
+    transition: transform .2s ease;
+}
+
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: table;
+    width: 200px;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+li {
+    display: table-cell;
+    position: relative;
+}
+
+.links li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.links li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.links a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.links>a img {
+    width: 25px;
+}
+
+/*HERO BACKGROUND*/
+.presentacion {
+    position: relative;
+    background: linear-gradient(315deg, #000000 0%, #2f2f2f 100%);
+    padding: 200px 0;
+}
+
+
+.datos {
+    color: white;
+    ;
+    font-family: 'Poppins';
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.datos h1 {
+    font-size: 58px;
+    margin: 0;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.enlaces>a {
+    margin: 0 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.341);
+}
+
+.enlaces>a:hover {
+    background-color: #2f2f2f;
+    transition: background-color .2s ease;
+}
+
+
+
+.animacion {
+    font-weight: 600;
+    font-size: 56px;
+    background: linear-gradient(to right, rgb(241, 214, 175)20%, rgba(166, 166, 166, 0.676)50%, rgb(241, 214, 175)70%, rgba(166, 166, 166, 0.676)80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% auto;
+    animation: gradient 5s infinite alternate;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 50% 100%;
+    }
+}
+
+.logos img {
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+.logos img:nth-child(1),
+.logos img:nth-child(2),
+.logos img:nth-child(3) {
+    width: 2.4rem;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.items a {
+    margin-right: 1rem;
+
+}
+
+/* SCROLL BOTON*/
+
+.scroll {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.scroll-btn {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins';
+    animation: bounce 1s infinite linear;
+    font-size: 16px;
+}
+
+.scroll-btn span {
+    font-weight: 600;
+    font-size: 24px;
+
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+
+/* MAIN */
+main {
+    padding: 5rem 5rem;
+}
+
+
+.inicio>span {
+    color: rgba(241, 214, 175);
+    font-weight: 600;
+
+}
+
+.inicio {
+    text-align: center;
+}
+
+.items a {
+    color: white;
+    background-color: #363636;
+    padding: 5px 1rem;
+    border-radius: 2rem;
+    border: 1px solid #e1e1e182;
+    transition: background-color .4s ease;
+}
+
+.items a:hover {
+    background-color: #434343;
+    transition: background-color .4s ease;
+}
+
+.items a .active {
+    background-color: #434343;
+}
+
+.active {
+    background-color: #585858;
+}
+
+.contenido-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5rem;
+}
+
+#contenido2 :nth-child(1) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#contenido2 :nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#contenido4 :nth-child(1) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#contenido4 :nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#contenido {
+    margin-left: 10%;
+}
+
+.column-2 img {
+    width: 600px;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.column-2 img:hover {
+    transform: scale(1.05);
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.551);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.column span {
+    color: rgb(241, 214, 175);
+    letter-spacing: 5px;
+}
+
+.column h2 {
+    color: white;
+}
+
+.column p {
+    width: 70%;
+    text-align: justify;
+    color: white;
+}
+
+.column a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+.link-proyecto {
+    margin-top: 2rem;
+}
+
+.link-proyecto a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    background-color: #363636;
+    padding: 5px 10px;
+    border-radius: 2rem;
+    border: 1px solid #585858;
+    transition: background-color .3s ease;
+}
+
+.link-proyecto a:hover {
+    background-color: #6f6f6f;
+    transition: background-color .3s ease;
+
+}
