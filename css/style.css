@@ -221,7 +221,7 @@ a:hover:after {
 
 /* MAIN */
 main {
-    padding: 5rem 5rem;
+    padding: 5rem 5rem 0 5rem;
 }
 
 
@@ -340,4 +340,152 @@ main {
     background-color: #6f6f6f;
     transition: background-color .3s ease;
 
+}
+
+/* HABILIDADES */
+
+.icons img {
+    width: 56px;
+}
+
+.skills {
+    padding: 5rem 0;
+}
+
+.front-skill,
+.back-skill,
+.design-skill {
+    text-align: center;
+    background-color: #2f2f2f;
+    height: 25vw;
+    margin: 3rem 0;
+    border-radius: 25px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.248);
+    transition: transform .5s ease;
+}
+
+
+.front-skill .icons,
+.back-skill .icons,
+.design-skill .icons {
+    margin: 2rem;
+
+}
+
+.box-skills {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: auto auto;
+    margin: 0 5rem;
+    justify-content: center;
+}
+
+.box-skills:nth-child(3) {
+    grid-row: 2/2;
+}
+
+.s-title {
+    margin-top: 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.front-skill .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+}
+
+.back-skill .icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.i-mg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-mg span {
+    color: white;
+    margin-top: 10px;
+}
+
+.design-skill .icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.front-skill:hover,
+.back-skill:hover,
+.design-skill:hover {
+    transform: translateY(-30px);
+}
+
+footer {
+    background-color: #303030;
+    height: 12vw;
+}
+
+.f-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+}
+
+.logotipo img {
+    width: 50px;
+}
+
+.logotipo span {
+    margin-left: 1rem;
+    color: white;
+    /* Puedes ajustar el color según tus preferencias */
+}
+
+footer {
+    background-color: #303030;
+    height: 15vw;
+}
+
+.f-box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.f-section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.f-sp {
+    margin-bottom: 1rem;
+}
+
+.f-sp span {
+    color: white;
+}
+
+.f-section:nth-child(3) a {
+    color: white;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
 }
