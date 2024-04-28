@@ -294,6 +294,13 @@ main {
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
+@media (max-width:1440px) {
+    .column-2 img {
+        width: 450px;
+    }
+
+}
+
 .column-2 img:hover {
     transform: scale(1.05);
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.551);
@@ -429,6 +436,15 @@ main {
 .back-skill:hover,
 .design-skill:hover {
     transform: translateY(-30px);
+}
+
+@media (min-width:1000px) {
+
+    .front-skill,
+    .back-skill,
+    .design-skill {
+        height: 30vw;
+    }
 }
 
 footer {
