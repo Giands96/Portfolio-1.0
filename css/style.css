@@ -74,11 +74,6 @@ li {
     width: 0;
 }
 
-a:hover:after {
-    width: 100%;
-    left: 0;
-}
-
 .links a:hover:after {
     width: 100%;
     left: 0;
@@ -289,6 +284,7 @@ main {
 
 .column-2 img {
     width: 600px;
+    height: 330px;
     border-radius: 1rem;
     cursor: pointer;
     transition: transform .3s ease, box-shadow .3s ease;
@@ -343,11 +339,6 @@ main {
     transition: background-color .3s ease;
 }
 
-.link-proyecto a:hover {
-    background-color: #6f6f6f;
-    transition: background-color .3s ease;
-
-}
 
 /* HABILIDADES */
 
@@ -432,11 +423,6 @@ main {
     place-items: center;
 }
 
-.front-skill:hover,
-.back-skill:hover,
-.design-skill:hover {
-    transform: translateY(-30px);
-}
 
 @media (min-width:1000px) {
 
