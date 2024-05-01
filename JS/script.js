@@ -33,3 +33,25 @@ function movimiento2(card) {
     card.style.transform = 'translateY(0px)';
 
 }
+
+
+/* DESLIZAMIENTO PORTFOLIO*/
+
+/* VENTANA MODAL*/
+window.onload = () => {
+    const btnCerrarModal = document.querySelector('#cerrar-modal')
+    const modal = document.querySelector('#modal')
+    modal.showModal();
+
+
+    btnCerrarModal.addEventListener('click', () => {
+        modal.style.transition = "transform 1s ease";
+        modal.style.transform = "translateY(-1000px)";
+
+        modal.addEventListener('transitionend', () => {
+            modal.close();
+        });
+    });
+
+}
+

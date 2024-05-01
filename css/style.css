@@ -433,6 +433,92 @@ main {
     }
 }
 
+/* VENTANA MODAL*/
+
+#modal {
+    width: 560px;
+    height: 720px;
+    animation: intro 1s ease;
+}
+
+@keyframes intro {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+
+#modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.675);
+}
+
+#modal {
+    background-image: linear-gradient(to right top, #161616, #1e1e1e, #272727, #303030, #393939);
+    border-radius: 15px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.modal span:nth-child(1) {
+    color: rgb(241, 214, 175);
+    font-size: 64px;
+    margin-top: 5rem;
+}
+
+.modal span:nth-child(2) {
+    color: white;
+    word-spacing: 5px;
+    text-align: justify;
+    font-size: 18px;
+    width: 450px;
+    margin-top: 2rem;
+}
+
+.modal button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    width: 150px;
+    height: 50px;
+    margin-top: 100px;
+    background-color: #303030;
+    color: rgb(241, 214, 175);
+    font-family: 'Poppins';
+    font-size: 20px;
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color .3s ease;
+}
+
+.modal button:hover {
+    background-color: #585858;
+}
+
+.modal button:focus {
+    outline: none;
+}
+
+
+
+
+
+/* FOOTER */
+
+
 footer {
     background-color: #303030;
     height: 12vw;
