@@ -55,3 +55,51 @@ window.onload = () => {
 
 }
 
+
+
+/*SLIDER */
+const images = ["url('images/img1.png')", "url('images/img2.png')", "url('images/img3.png')"];
+let currentSlide = 0;
+
+
+function afterSlide() {
+
+    currentSlide = (currentSlide + 1) % images.length;
+    cargarSlide();
+}
+
+function beforeSlide() {
+    currentSlide = (currentSlide - 1 + images.length) % images.length;
+    cargarSlide();
+}
+
+function cargarSlide() {
+    const slider = document.querySelector('.slider');
+    const contentBox = document.querySelector('.content-box');
+
+    const textos = document.querySelectorAll('.content-box > div');
+    textos.forEach(text => {
+        text.style.display = 'none';
+    });
+
+    const currentText = document.querySelector(`.text-${currentSlide + 1}`);
+    currentText.style.display = 'block';
+
+
+
+    slider.style.opacity = 0;
+    setTimeout(() => {
+        slider.style.backgroundImage = images[currentSlide];
+        slider.style.opacity = 1;
+    }, 500);
+}
+
+cargarSlide();
+
+/* EASTER */
+
+function msgEaster(event) {
+    event.preventDefault();
+    const cv = document.getElementById('cv');
+    alert('Oops! Este apartado está en proceso, inténtalo más tarde ;)');
+}

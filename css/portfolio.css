@@ -253,11 +253,86 @@ a:hover:after {
 }
 
 
+.slider {
+    position: relative;
+    margin: 5rem 0;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.703)20%, transparent);
+    z-index: 1;
+}
+
+.slider .box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35vw;
+}
+
+.content-box {
+    z-index: 3;
+    display: flex;
+    justify-content: left;
+    padding-right: 500px;
+    width: 900px;
+}
+
+
+.arrow {
+    z-index: 3;
+    display: block;
+    opacity: 100%;
+}
+
+.content-box span {
+    color: white;
+}
+
+.arrow a img {
+    width: 32px;
+}
+
+.arrow a {
+    cursor: pointer;
+}
+
+#btn-direction {
+    background-color: #303030;
+    color: white;
+    border: 0;
+    padding: 0.5rem 1rem;
+    font-family: 'Poppins';
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+}
+
+#btn-direction:hover {
+    background-color: #515151;
+}
+
+.slider {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content-box {
+    transition: opacity 0.5s ease-in-out;
+}
+
+
 /*FOOTER*/
 
 footer {
-    background-color: #303030;
-    height: 15vw;
+    background-image: linear-gradient(to top, #1f1f1f, #252525, #2b2b2b, #313131, #373737);
+    height: 12vw;
 }
 
 .f-box {

@@ -53,85 +53,79 @@
     </section>
 
 
-    <section class="m-section">
 
-        <div class="m-box">
-            <div class="m-title">
-                <span style="color: rgb(241, 214, 175); font-size: 1.5rem; letter-spacing: 5px;">Portafolio
-                    Personal</span>
 
+
+    <div class="slider">
+        <div class="box-1">
+            <div class="arrow">
+                <a onclick="beforeSlide(this)"><img src="images/contorno-fino-de-punta-de-flecha-a-la-izquierda.png"
+                        alt=""></a>
             </div>
-            <div class="m-span">
-                <span>TECNOLOGIAS USADAS:</span>
-                <div class="logos">
-                    <img src="lenguajes/HTML.png" alt="">
-                    <img src="lenguajes/CSS.png" alt="">
-                    <img src="lenguajes/JS.png" alt="">
+            <div class="content-box">
+                <div class="text-1">
+                    <h2 style="color: white; font-weight: 500; ">PORTAFOLIO PERSONAL</h2>
+                    <span>TECNOLOGIAS USADAS:</span>
+                    <div class="logos">
+                        <img src="lenguajes/HTML.png" alt="">
+                        <img src="lenguajes/CSS.png" alt="">
+                        <img src="lenguajes/JS.png" alt="">
+                    </div>
+                    <span style="font-size: 18px; font-weight: 400;">
+                        Desarrollé un portafolio personal utilizando HTML, CSS y JavaScript para mostrar mi trabajo y
+                        habilidades en diseño y desarrollo web de manera creativa y profesional.
+                    </span>
+                    <br><br>
+                    <a id="btn-direction" target="_blank" href="index.html">IR AL SITIO</a>
                 </div>
-                <span class="descripcion" style="font-size: 18px; font-weight: 400;">
-                    Desarrollé un portafolio personal utilizando HTML, CSS y JavaScript para mostrar mi trabajo y
-                    habilidades en diseño y desarrollo web de manera creativa y profesional.
-                </span>
-            </div>
 
-            <div class="m-img">
-                <img src="images/img1.png" alt="">
+                <div class="text-2">
+                    <h2 style="color: white; font-weight: 500; ">APLICACION DE GESTION DE TAREAS</h2>
+                    <span>TECNOLOGIAS USADAS:</span>
+                    <div class="logos">
+                        <img src="lenguajes/HTML.png" alt="">
+                        <img src="lenguajes/CSS.png" alt="">
+                        <img src="lenguajes/JS.png" alt="">
+                        <img src="lenguajes/React.webp" alt="">
+                    </div>
+                    <span style="font-size: 18px; font-weight: 400;">
+                        Creé una aplicación de gestión de tareas con React.js, que permite a los usuarios
+                        organizar sus actividades de manera eficiente y visualmente atractiva.
+                    </span>
+                    <br><br>
+                    <a id="btn-direction" target="_blank" href="app-react/public/index.html">IR AL SITIO</a>
+                </div>
+
+                <div class="text-3">
+                    <h2 style="color: white; font-weight: 500; ">CALCULADORA DE PROPINAS</h2>
+                    <span>TECNOLOGIAS USADAS:</span>
+                    <div class="logos">
+                        <img src="lenguajes/HTML.png" alt="">
+                        <img src="lenguajes/CSS.png" alt="">
+                        <img src="lenguajes/JS.png" alt="">
+                    </div>
+                    <span style="font-size: 18px; font-weight: 400;">
+                        Diseñé una calculadora de propinas con HTML, CSS y JavaScript para ayudar a los usuarios a
+                        calcular
+                        rápidamente la propina adecuada en restaurantes y establecimientos.
+                    </span>
+                    <br><br>
+                    <a id="btn-direction" target="_blank" href="Calculadora/calculadorapropina.html">IR AL SITIO</a>
+                </div>
+
+            </div>
+            <div class="arrow">
+                <a onclick="afterSlide()"><img style="width: 48px" src="images/proximo.png" alt=""></a>
             </div>
         </div>
-
-        <div class="m-box">
-            <div class="m-title">
-                <span style="color: rgb(241, 214, 175); font-size: 1.5rem; letter-spacing: 5px;">Aplicación de
-                    Tareas</span>
-
-            </div>
-            <div class="m-span">
-                <span>TECNOLOGIAS USADAS:</span>
-                <div class="logos">
-                    <img src="lenguajes/HTML.png" alt="">
-                    <img src="lenguajes/CSS.png" alt="">
-                    <img src="lenguajes/JS.png" alt="">
-                    <img src="lenguajes/React.webp" alt="">
-                </div>
-                <span class="descripcion" style="font-size: 18px; font-weight: 400;">
-                    Creé una aplicación de gestión de tareas con React.js, que permite a los usuarios
-                    organizar sus actividades de manera eficiente y visualmente atractiva.
-                </span>
-            </div>
-            <div class="m-img">
-                <img src="images/img2.png" alt="">
-            </div>
-        </div>
-
-        <div class="m-box">
-            <div class="m-title">
-                <span style="color: rgb(241, 214, 175); font-size: 1.5rem; letter-spacing: 5px;">Calculadora de
-                    Propinas</span>
-
-            </div>
-            <div class="m-span">
-                <span>TECNOLOGIAS USADAS:</span>
-                <div class="logos">
-                    <img src="lenguajes/HTML.png" alt="">
-                    <img src="lenguajes/CSS.png" alt="">
-                    <img src="lenguajes/JS.png" alt="">
-                </div>
-                <span class="descripcion" style="font-size: 18px; font-weight: 400;">
-                    Diseñé una calculadora de propinas con HTML, CSS y JavaScript para ayudar a los usuarios a calcular
-                    rápidamente la propina adecuada en restaurantes y establecimientos.
-                </span>
-            </div>
-            <div class="m-img">
-                <img src="images/img3.png" alt="">
-            </div>
-        </div>
+    </div>
 
 
-    </section>
+
 
 
     <footer>
-        <div class="f-box">
+        <div class=" f-box">
             <div class="f-section">
                 <div class="logotipo">
                     <div>
@@ -147,9 +141,10 @@
                 <div class="f-sp">
                     <span style="font-weight: 500; font-size: 20px;">Redes</span>
                     <div style="margin-top: 1rem;">
-                        <a href=""><img style="width: 35px; margin-right: 1rem;" src="images/redes/signo-de-github.png"
-                                alt=""></a>
-                        <a href=""><img style="width: 35px;" src="images/redes/logotipo-de-linkedin.png" alt=""></a>
+                        <a href="https://github.com/Giands96"><img style="width: 35px; margin-right: 1rem;"
+                                src="images/redes/signo-de-github.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/axel-del-solar-aa97881a3/"><img style="width: 35px;"
+                                src="images/redes/logotipo-de-linkedin.png" alt=""></a>
                     </div>
                 </div>
                 <div class="f-sp">
@@ -162,9 +157,6 @@
             </div>
 
             <div class=" f-section">
-                <a href="">Blog</a>
-                <a href="">Contacto</a>
-                <a href="">Soporte</a>
             </div>
         </div>
         </div>
