@@ -3,7 +3,7 @@
 /* FUNCION SCROLL (VER PROYECTOS) */
 function scrollDown() {
     window.scrollTo({
-        top: window.scrollY + 900,
+        top: window.scrollY + 1400,
         behavior: 'smooth'
     });
 }
@@ -82,8 +82,8 @@ function cargarSlide() {
         text.style.display = 'none';
     });
 
-    const currentText = document.querySelector(`.text-${currentSlide + 1}`);
-    currentText.style.display = 'block';
+    const textoActual = document.querySelector(`.text-${currentSlide + 1}`);
+    textoActual.style.display = 'block';
 
 
 
@@ -100,6 +100,6 @@ cargarSlide();
 
 function msgEaster(event) {
     event.preventDefault();
-    const cv = document.getElementById('cv');
+    document.getElementById('cv');
     alert('Oops! Este apartado está en proceso, inténtalo más tarde ;)');
 }
