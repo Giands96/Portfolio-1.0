@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logotipo">
+                    <div>
+                        <a href=""><img style=" width: 50px;" src="images/codigo.png" alt=""><span
+                                style=" margin-left:1rem">Axel
+                                Del
+                                Solar</span></a>
+                    </div>
+                    <div>
+                        <ul class="links">
+                            <li><a href="index.html">INICIO</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+        <div class="contacto">
+            <div>
+                <h2>Trabajemos juntos</h2>
+            </div>
+
+            <div>
+                <div class="container">
+                    <form action="#" method="post" onsubmit="mostrarModal(); return false">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input type="text" id="telefono" name="telefono">
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <div>
+                            <button type="button" id="send" onclick="mostrarModal()">Enviar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+
+        <div id="modal">
+            <div id="datos">
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <div class=" f-box">
+            <div class="f-section">
+                <div class="logotipo">
+                    <div>
+                        <a href=""><img style=" width: 50px;" src="images/codigo.png" alt=""><span
+                                style=" margin-left:1rem">Axel
+                                Del
+                                Solar</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="f-section">
+                <div class="f-sp">
+                    <span style="font-weight: 500; font-size: 20px;">Redes</span>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Giands96"><img style="width: 35px; margin-right: 1rem;"
+                                src="images/redes/signo-de-github.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/axel-del-solar-aa97881a3/"><img style="width: 35px;"
+                                src="images/redes/logotipo-de-linkedin.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="f-sp">
+                    <span style="font-weight: 500;  font-size: 20px;">Correo</span>
+                    <div style="margin-top: 1rem;">
+                        <span>dsg4857@gmail.com</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" f-section">
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="JS/script-contacto.js"></script>
+
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 /* FUNCION SCROLL (VER PROYECTOS) */
 function scrollDown() {
     window.scrollTo({
-        top: window.scrollY + 1400,
+        top: window.scrollY + 1350,
         behavior: 'smooth'
     });
 }
@@ -103,3 +103,4 @@ function msgEaster(event) {
     document.getElementById('cv');
     alert('Oops! Este apartado está en proceso, inténtalo más tarde ;)');
 }
+
